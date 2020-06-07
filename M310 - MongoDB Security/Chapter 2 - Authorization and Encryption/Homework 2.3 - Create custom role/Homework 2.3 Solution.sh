@@ -59,10 +59,7 @@ mongo admin --port 31230 --eval 'db.createRole({
 
 mongo admin --port 31230 --eval 'db.createRole({
   role: "MANAGEMENT",
-  privileges: [{
-    resource: { db: "HR", collection: "" },
-    actions: [ "insert" ]
-  }],
+  privileges: [],
   roles:[{
     role: "dbOwner", db: "HR"
   }]
