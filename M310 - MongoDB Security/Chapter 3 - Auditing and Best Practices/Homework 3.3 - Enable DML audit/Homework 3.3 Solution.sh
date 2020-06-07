@@ -54,4 +54,4 @@ mongo admin --port 31330 --eval 'rs.add("database.m310.mongodb.university:31331"
 mongo admin --port 31330 --eval 'rs.add("database.m310.mongodb.university:31332")'
 
 # Validates the homework.
-./validate-hw-3.2.sh
+./validate-hw-3.3.sh
