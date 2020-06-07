@@ -23,7 +23,6 @@ In this homework you're going to define a series of custom roles. For the sake o
 		<td>MANAGEMENT</td>
 		<td>
      			- Inherits the dbOwner role of the HR database <br/>
-     			- Can insert on all collections in the HR database
 		</td>
 	</tr>
 	<tr>
@@ -44,8 +43,6 @@ After you've created your user-defined roles you can run the validation script a
 <details>
   <summary>Click here for the solution</summary>
     <ul>
-      <li>[
-{"role":"EMPLOYEEPORTAL","inheritedRoles":[],
-  "privileges":[{"resource":{"db":"HR","collection":"employees"},"actions":["find","update"]}]},{"role":"HRDEPARTMENT","inheritedRoles":[],"privileges":[{"resource":{"db":"HR","collection":""},"actions":["dropUser","find"]},{"resource":{"db":"HR","collection":"employees"},"actions":["insert"]}]},{"role":"MANAGEMENT","inheritedRoles":[{"role":"dbOwner","db":"HR"}],"privileges":[{"resource":{"db":"HR","collection":""},"actions":["insert"]}]}]</li>
+      <li>[{"role":"EMPLOYEEPORTAL","inheritedRoles":[],"privileges":[{"resource":{"db":"HR","collection":"employees"},"actions":["find","update"]}]},{"role":"HRDEPARTMENT","inheritedRoles":[],"privileges":[{"resource":{"db":"HR","collection":""},"actions":["dropUser","find"]},{"resource":{"db":"HR","collection":"employees"},"actions":["insert"]}]},{"role":"MANAGEMENT","inheritedRoles":[{"role":"dbOwner","db":"HR"}],"privileges":[]}]</li>
 	</ul>
 </details>
