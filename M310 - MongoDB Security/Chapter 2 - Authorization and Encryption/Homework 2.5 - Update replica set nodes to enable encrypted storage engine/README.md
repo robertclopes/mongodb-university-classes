@@ -40,6 +40,6 @@ After you've successfully enabled storage engine encryption on the replica set y
 <details>
   <summary>Click here for the solution</summary>
     <ul>
-      <li>{"doc":{"_id":{},"str":"The quick brown fox jumps over the lazy dog"},"isEnabled":true}</li>
+      <li>{"doc":{"str":"The quick brown fox jumps over the lazy dog"},"isEnabled":true}</li>
 	</ul>
 </details>
